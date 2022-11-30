@@ -16,6 +16,9 @@ public class Criatura {
   public static void tirarVida(double vida) {
     Criatura.vida -= vida;
   }
+
+  public void atacar() {
+  }
   
   public void vida() {
     System.out.println("vida" + vida);

@@ -1,3 +1,5 @@
+import javafx.util.converter.DoubleStringConverter;
+
 public class Personagem {
     private Number id;
     protected String nome;
@@ -18,10 +20,15 @@ public class Personagem {
   
     public void curar() {
     }
-   //  public static void curar() {
-   //    System.out.println("Curar!");
-   //    Pocao.usarPocao(5.0);
-   // }
+
+    public static void tirarVidaHeroi(double vida) {
+        Personagem.vida -= vida;
+      }
+
+    public double getDano() {
+        return poder;
+    }
+
     static void morrer() {
       System.out.println("Você morreu pela " + mortesPersonagem + "... " + "Deseja tentar novamente?");
     }
