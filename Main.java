@@ -15,12 +15,13 @@ class Main {
     Thread.sleep(1000);
 
     System.out.println("Ok, " + nomePersonagem + ". Seja bem-vindo a essa jornada!");
+    menu.line();
     Thread.sleep(1000);
 
     String classePersonagem;
     
     do {
-      menu.line();
+      
       System.out.println("Por favor, escolha uma classe entre guerreiro e mago");
       classePersonagem = classeInput.nextLine();
     }
@@ -28,6 +29,7 @@ class Main {
 
     menu.line();
     System.out.println("Ok, " + classePersonagem.toLowerCase() + " " + nomePersonagem + ". Vamos começar!!");
+    menu.line();
     Thread.sleep(2000);
 
     Personagem p = null;
@@ -38,7 +40,6 @@ class Main {
       p = new Mago();
     }
     p.nome = nomePersonagem;
-    menu.line();
 
     System.out.println("Mas antes, por favor " + classePersonagem.toLowerCase() + " " + nomePersonagem + ", se apresente");
     menu.line();
